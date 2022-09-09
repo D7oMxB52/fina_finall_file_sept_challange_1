@@ -38,18 +38,22 @@ public class ItemServiceImp implements ItemService{
     public Item updateItem(Item item, String id) {
 
         Item existingItem = getItemById(id) ;
-        if (item.getName() == null){
-            item.setName(existingItem.getName());
+        if (item.getTitle() == null){
+            item.setTitle(existingItem.getTitle());
         }
         if (item.getDesc() == null){
             item.setDesc(existingItem.getDesc());
+        }
+        if (item.getImagePath() == null){
+            item.setImagePath(existingItem.getImagePath());
         }
         if (item.getPrice() == 0.0){
             item.setPrice(existingItem.getPrice());
 
         }
         existingItem.setDesc(item.getDesc());
-        existingItem.setName(item.getName());
+        existingItem.setTitle(item.getTitle());
+        existingItem.setImagePath(item.getImagePath());
         existingItem.setPrice(item.getPrice());
         int index = itemDAO.getAllItems().getItemList().indexOf(existingItem);
         itemDAO.getAllItems().getItemList().set(index , existingItem);
