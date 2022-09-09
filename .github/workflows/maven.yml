@@ -5,7 +5,7 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ "feature_branch-building_CustomExceptionHandler" ]
+    branches: [ "feature_branch-building_itemService" ]
   pull_request:
     branches: [ "Dev_branch" ]
 
