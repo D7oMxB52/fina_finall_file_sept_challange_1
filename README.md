@@ -1,5 +1,5 @@
 # fina_finall_file_sept_challange_1
-soving github action issue. thank you rmit
+solving github action issue. thank you rmit
 
 like of the video explaining controller methods 
 
